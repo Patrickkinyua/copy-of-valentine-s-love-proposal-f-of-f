@@ -3,7 +3,10 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { DatePlan, LoveLetter } from "../types";
 
 /* Using a factory function to create a new instance for each call as per guidelines */
-const getAI = () => new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+const getAI = () =>
+  new GoogleGenAI({
+    apiKey: import.meta.env.VITE_GEMINI_API_KEY
+  });
 
 export const generateLoveLetter = async (targetName: string, memories: string, tone: string): Promise<string> => {
   const ai = getAI();
