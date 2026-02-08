@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Valentine's Love Proposal",
+  "description": "An enchanting, interactive Valentine's Day proposal experience featuring AI-powered love letters, custom date planning, and virtual bouquets.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
